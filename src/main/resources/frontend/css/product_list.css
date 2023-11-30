@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding: 0 80px;
+    /* height: 200px; */
+    /* background-color: red; */
+    /* margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px; */
+
+    /*1.margin :1px chia Ä‘á»�u cáº£ 4 phÃ­a
+    2.margin: apx bpx, a lÃ  bot va top, b la trai va phai 
+    3.margin: apx bpx cpx; a la top, b la trai phai, c la bot
+    4.margin: a b c d; a la top , b pháº£i, c bot, d left
+    5.margin: auto; cÄƒn pháº§n tá»­ ra giá»¯a mÃ n hÃ¬nh theo chiá»�u ngang
+    */
+}
+
+
+.top {
+    display: flex;
+    justify-content: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #333333;
+    font-size: 17px;
+    align-items: center;
+    margin-top: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    margin: 0;
+}
+
+
+.top a {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 700;
+}
+
+.cart a {
+    margin-right: 300px;
+    padding: 15px 25px;
+    position: relative;
+}
+
+
+.register a {
+    padding: 15px 25px;
+}
+
+.cus_name{
+    margin-right: 15px;
+    color: white;
+}
+
+
+.sign_in a {
+    padding: 15px 25px;
+}
+
+.register a:hover,
+.sign_in a:hover {
+    background-color: #00c8c8;
+    color: white;
+}
+
+.cart i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.cart a {
+    background-color: #00c8c8;
+    color: white;
+    ;
+}
+
+
+.cart a .number {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: red;
+    color: white;
+    top: 8px;
+    right: 96px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #f8f8f8;
+}
+
+nav > a > img{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+
+
+.tab_nav {
+    float: right;
+}
+
+.tab_nav .menu_main {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu_main {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu_main li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+.menu_main li a:hover {
+    color: #00c8c8;
+}
+
+.form_search {
+    display: flex;
+    margin: 0 30px;
+}
+
+.form_search input {
+    width: 175px;
+    height: 33px;
+    border: 1px solid #d9d6d6;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 13px;
+}
+
+.form_search input:focus {
+    outline: unset;
+}
+
+.form_search button {
+    width: 36px;
+    height: 33px;
+    border: 1px solid #d9d6d6;
+    color: #bbbbbb;
+    background-color: #f8f8f8;
+    font-size: 17px;
+}
+
+.menu_main>li {
+    position: relative;
+}
+
+.sub_menu {
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 250px;
+    top: 43px;
+    left: 22px;
+    box-shadow: 0 0 5px #828282;
+    padding: 15px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.sub_menu ul li h3 {
+    margin-left: 22px;
+    font-size: 30px;
+}
+
+.menu_main>li:hover .sub_menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub_menu .sale_off {
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+}
+
+main {
+    display: flex;
+    margin-top: 70px;
+
+}
+
+.menu_left {
+    width: 20%;
+    min-width: 300px;
+    /*
+    XÃ¡c Ä‘á»‹nh kÃ­ch thÆ°á»›c ná»™i dá»¥ng tÃ­nh tá»« Ä‘Ã¢u
+    border-box: tÃ­nh tá»« border
+    content-box: ná»™i dung trong 
+    */
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.content_right {
+    width: 80%;
+    max-width: calc(100%-300px);
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.menu .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    /*Viá»�n bao ngoÃ i pháº§n tá»­ html
+    border: apx style color;
+    a: Ä‘á»™ dÃ y border
+    style:solid, dashed, botted,..
+    color: mÃ u
+
+    border-top, border-right,left,bottom
+    */
+    border: 1px solid #ccc;
+
+    /*
+    border-radius:  ;  bo trÃ²n gÃ³c
+      1. border-radius : apx; cáº£ 4 gÃ³c
+        apx bpx; a lÃ  top-left/right-bottom , b lÃ  top-right/bottom-left
+        apx bpx cpx; a top-left, b top-right/bottom -left, c lÃ  right-bottom
+        4 giÃ¡ trá»‹ ;  a lÃ  top-L, b lÃ  top-R, c bottom-R, d bottom-L
+    
+    */
+    border-radius: 5px 5px 0 0;
+
+}
+
+.menu ul {
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    color: #282828;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* selector Ä‘áº¿n Ä‘á»‘i tÆ°á»£ng con cuá»‘i*/
+.menu ul li:last-child a {
+    border-bottom: 0;
+}
+
+.menu_left .menu ul li a:hover{
+    background-color: #00c8c8;
+    color: white;
+}
+
+/*con Ä‘áº§u*/
+
+.menu ul li:first-child a {
+    background-color: #00c8c8;
+    color: white;
+}
+
+
+.filter {
+    margin-top: 30px;
+}
+
+.filter ul li {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.filter ul li input[type="checkbox"] {
+    display: none;
+}
+
+.filter ul li label {
+    position: relative;
+    padding-left: 40px;
+    display: block;
+
+    /*con trá»� chuá»™t*/
+    cursor: pointer;
+}
+
+.filter ul li label::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/*trá»� Ä‘áº¿n Ä‘á»‘i tÆ°á»£ng html Ä‘á»©ng káº¿ nÃ³*/
+.filter ul li input[type="checkbox"]:checked+label::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 12px;
+    border-bottom: 2px solid #828282;
+    border-right: 2px solid #828282;
+    position: absolute;
+    left: 8px;
+    top: -3px;
+
+    /*xoay Ä‘á»‘i tÆ°á»£ng html Ä‘i bn Ä‘á»™ */
+    transform: rotate(45deg);
+}
+
+.filter ul li input[type="checkbox"]:checked+label::before {
+    border: 1px solid #00c8c8;
+}
+
+.content_right {
+    padding-left: 30px;
+}
+
+.category_name {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.description_category p {
+    /*thá»¥t Ä‘áº§u dÃ²ng*/
+    text-indent: 10px;
+    /*khoáº£ng cÃ¡ch giá»¯a cÃ¡c tá»«*/
+    word-spacing: 5px;
+    /*khoáº£ng cÃ¡ch giá»¯a cÃ¡c chá»¯ cÃ¡i*/
+    letter-spacing: 2px;
+    /*chiá»�u cao cá»§a má»™t dÃ²ng text*/
+    line-height: 23px;
+}
+
+.description_category {
+    height: 300px;
+    /* border: 1px solid #000; */
+    /*dÃ¹ng Ä‘á»ƒ xá»­ lÃ½ ná»™i dung bá»‹ trÃ n ra khá»�i vÃ¹ng chá»©a
+       hidden: áº©n Ä‘i;
+       scroll: hiá»ƒn thá»‹ thanh scroll
+       auto: hiá»ƒn thá»‹ thanh scroll khi ná»™i dung thá»«a
+    */
+    overflow: hidden;
+}
+
+.view_more {
+    /*Hiá»ƒn thá»‹ text bÃªn trÃ¡i , pháº£i , center*/
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.view_more::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: -40px;
+}
+
+.products {
+    margin-top: 40px;
+    display: flex;
+    /*cÄƒn chá»‰nh cÃ¡c pháº§n tá»­ con theo hÃ ng hay theo cá»™t
+    row:hÃ ng
+    colum:cá»™t
+
+    */
+    flex-flow: row;
+    /*flex-wrap : khi tá»•ng width lá»›n hÆ¡n 100% thÃ¬ táº¡o 1 cá»™t má»›i hoáº·c dÃ²ng má»›i
+     nowrap: ko cho xuá»‘ng dÃ²ng
+     wrap:cho phÃ©p xuá»‘ng dÃ²ng
+    */
+    flex-wrap: wrap;
+}
+
+.products .product {
+    width: calc(100%/3);
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.product .info {
+    overflow: hidden;
+    color: #727272;
+}
+
+.product .info h2 a {
+    color: #727272;
+}
+
+.product .info img {
+    transition: 0.5s;
+}
+
+.product .info img:hover {
+
+    /*tÄƒng kÃ­ch thÆ°á»›c pháº§n tá»­ lÃªn hoáº·c giáº£m Ä‘i*/
+    transform: scale(0.7);
+    /* transform: rotate(360deg); */
+    /* transform: skew(45deg);  nghiÃªng Ä‘i bn Ä‘á»™*/
+}
+
+.desc h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.desc h2 a {
+    color: #282828;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.desc div {
+    /*cho phÃ©p dÃ²ng text xuá»‘ng dÃ²ng khi Ä‘á»™ dÃ i vÆ°á»£t quÃ¡ Ä‘á»™ dÃ i html cha
+       wrap 
+       nowrap
+    */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.desc div.price {
+    text-align: left;
+    font-size: 20px;
+    color: #727272;
+}
+
+.desc .button {
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+}
+
+.desc .button a{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #828282;
+    border-radius: 5px;
+}
+
+.desc .button a i{
+    font-size: 20px;
+    color: white;
+}
+
+.desc .button button {
+    font-size: 17px;
+    padding: 10px 10px;
+    border: 0;
+    background-color: #828282;
+    color: white;
+    border-radius: 5px;
+}
+
+.desc .button button:hover{
+    cursor: pointer;
+    background-color: #00c8c8;
+}
+
+.desc .button a:hover{
+    background-color: #00c8c8;
+}
+
+.page_control{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page_control button{
+    padding: 3px 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    color: #333;
+}
+
+.page_control button a{
+	text-decoration: none;
+}
+
+footer{
+    background-color: #f8f8f8;
+}
+
+.footer_1{
+    display: flex;
+    padding: 40px 0;
+    
+}
+
+.content_footer{
+    display: flex;
+    width: 80%;
+    padding-left: 50px;
+}
+
+.company{
+    width: 20%;
+}
+
+.company h3{
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.company div{
+    margin-top: 8px;
+    color: #727272;
+}
+
+.content_footer .item_content{
+    width: calc(100%/4);
+}
+
+.content_footer .item_content .title{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content_footer .item_content ul li a{
+    text-decoration: none;
+    color: #727272;
+    line-height: 30px;
+}
+
+.content_footer .item_content ul{
+    margin-top: 15px;
+}
+
+.content_footer .item_content ul li a:hover{
+    color: #00c8c8;
+}
